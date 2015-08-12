@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 var read = require("stream-read");
-var toDot = require("./");
+var toDot = require("../");
 
 read(process.stdin, parse);
 

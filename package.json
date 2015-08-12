@@ -1,0 +1,35 @@
+{
+	"name": "jgf-dot",
+	"version": "1.0.0",
+	"description": "Convert a json graph into a dot file for use with Graphviz and other visualizers",
+	"main": "index.js",
+	"scripts": {
+		"test": "cat example/graph.json | node cli.js > example/graph.dot"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jsongraph/jgf-dot.git"
+	},
+	"keywords": [
+		"json",
+		"graph",
+		"format",
+		"dot",
+		"graphviz",
+		"visualize"
+	],
+	"author": "rangermauve",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jsongraph/jgf-dot/issues"
+	},
+	"homepage": "https://github.com/jsongraph/jgf-dot#readme",
+	"dependencies": {
+		"graphlib-dot": "^0.6.2",
+		"graphlib-json-graph": "^1.0.0",
+		"stream-read": "^1.1.2"
+	},
+	"bin": {
+		"jgfdot": "bin/cli.js"
+	}
+}

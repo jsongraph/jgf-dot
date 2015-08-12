@@ -1,0 +1,5 @@
+graph {
+  "0" [id="0",type="node type",label="node label(0)",metadata="{\"user-defined\":\"values\"}"]
+  "1" [id="1",type="node type",label="node label(1)",metadata="{\"user-defined\":\"values\"}"]
+  "0" -- "1" [source="0",relation="edge relationship",target="1",directed=false,label="edge label",metadata="{\"user-defined\":\"values\"}"]
+}

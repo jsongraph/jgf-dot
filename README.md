@@ -32,3 +32,5 @@ var dot = toDot(graph);
 
 fs.writeFileSync("graph.dot", "utf8");
 ```
+
+**NOTE:** Currently the graph isn't being valdated before it gets parsed, but that feature is on the todo list.

@@ -26,8 +26,7 @@
 	"homepage": "https://github.com/jsongraph/jgf-dot#readme",
 	"dependencies": {
 		"graphlib-dot": "^0.6.2",
-		"graphlib-json-graph": "^1.0.0",
-		"stream-read": "^1.1.2"
+		"graphlib-json-graph": "^1.0.0"
 	},
 	"bin": {
 		"jgfdot": "bin/cli.js"

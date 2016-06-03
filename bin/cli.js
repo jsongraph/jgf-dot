@@ -1,19 +1,20 @@
 #! /usr/bin/env node
 
-var read = require("stream-read");
-var toDot = require("../");
+var process = require('process');
 
-read(process.stdin, parse);
+var toDot = require('../');
 
-function parse(err, graph) {
-	if (err) return error(err);
-	write(toDot(JSON.parse(graph)));
-}
+var fileContent = '';
 
-function write(graph) {
-	process.stdout.write(graph);
-}
+process.stdin.setEncoding('utf8');
 
-function error(err) {
-	process.stderr.write(err);
-}
+process.stdin.on('readable', function() {
+  var chunk = process.stdin.read()
+  if (chunk !== null) {
+    fileContent += chunk
+  }
+});
+
+process.stdin.on('end', function() {
+  process.stdout.write(toDot(JSON.parse(fileContent)));
+});

@@ -2,19 +2,11 @@
 
 var process = require('process');
 
+var read = require('read-file-stdin');
+
 var toDot = require('../');
 
-var fileContent = '';
-
-process.stdin.setEncoding('utf8');
-
-process.stdin.on('readable', function() {
-  var chunk = process.stdin.read()
-  if (chunk !== null) {
-    fileContent += chunk
-  }
-});
-
-process.stdin.on('end', function() {
-  process.stdout.write(toDot(JSON.parse(fileContent)));
+read(process.argv[2], function (err, buffer) {
+  if (err) throw err;
+  process.stdout.write(toDot(JSON.parse(buffer)));
 });

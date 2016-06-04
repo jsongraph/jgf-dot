@@ -1,6 +1,6 @@
 {
   "name": "jgf-dot",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Convert a json graph into a dot file for use with Graphviz and other visualizers",
   "main": "index.js",
   "scripts": {

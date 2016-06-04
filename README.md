@@ -8,14 +8,15 @@ Install [nodejs](https://nodejs.org/) and run:
 npm install -g jgf-dot
 ```
 
-Then you can do the conversion using:
+Then you can do the conversion using either:
 
 ```bash
 cat graph.json | jgfdot > graph.dot
+jgfdot graph.json > graph.dot
 ```
 
 ### `jgfdot`
-Reads a json graph from `STDIN` and outputs the Dot file to `STDOUT`
+Reads a json graph from `STDIN` or `file_name` and outputs the Dot file to `STDOUT`
 
 ## Javascript API
 

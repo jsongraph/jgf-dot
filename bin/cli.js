@@ -1,7 +1,5 @@
 #! /usr/bin/env node
 
-var process = require('process');
-
 var read = require('read-file-stdin');
 
 var toDot = require('../');

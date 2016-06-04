@@ -4,7 +4,7 @@
   "description": "Convert a json graph into a dot file for use with Graphviz and other visualizers",
   "main": "index.js",
   "scripts": {
-    "test": "cat example/graph.json | node cli.js > example/graph.dot"
+    "test": "cat example/graph.json | node bin/cli.js > example/graph.dot"
   },
   "repository": {
     "type": "git",

@@ -18,6 +18,14 @@ jgfdot graph.json > graph.dot
 ### `jgfdot`
 Reads a json graph from `STDIN` or `file_name` and outputs the Dot file to `STDOUT`
 
+## Docker
+Install [docker](https://www.docker.com/) and run:
+
+```bash
+docker build -t jgfdot .
+cat example/graph.json | docker run --rm --interactive jgfdot
+```
+
 ## Javascript API
 
 You can also use the programmatic API to convert json graph objects to dot file strings

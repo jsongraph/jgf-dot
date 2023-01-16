@@ -1,4 +1,7 @@
 # jgf-dot
+
+[UNMAINTAINED - dependent on graphlib-dot which is unmaintained and only works for JGF version 1.0]
+
 Convert a [json graph](https://github.com/jsongraph/json-graph-specification) into a dot file for use with Graphviz and other visualizers
 
 ## Command line
